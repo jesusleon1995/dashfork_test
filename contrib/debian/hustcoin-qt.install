@@ -1,0 +1,6 @@
+usr/local/bin/hustcoin-qt usr/bin
+share/pixmaps/hustcoin32.xpm usr/share/pixmaps
+share/pixmaps/hustcoin16.xpm usr/share/pixmaps
+share/pixmaps/hustcoin128.png usr/share/pixmaps
+debian/hustcoin-qt.desktop usr/share/applications
+debian/hustcoin-qt.protocol usr/share/kde4/services/

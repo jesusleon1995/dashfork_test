@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=HustCoin
+Comment=HustCoin P2P Cryptocurrency
+Comment[fr]=HustCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=HustCoin, eşten eşe kriptografik sanal para birimi
+Exec=hustcoin-qt %u
+Terminal=false
+Type=Application
+Icon=hustcoin128
+MimeType=x-scheme-handler/hustcoin;
+Categories=Office;Finance;

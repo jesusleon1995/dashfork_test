@@ -1,0 +1,22 @@
+[Unit]
+Description=HustCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=hustcoincore
+Group=hustcoincore
+
+Type=forking
+PIDFile=/var/lib/hustcoind/hustcoind.pid
+ExecStart=/usr/bin/hustcoind -daemon -pid=/var/lib/hustcoind/hustcoind.pid \
+-conf=/etc/hustcoincore/hustcoin.conf -datadir=/var/lib/hustcoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
